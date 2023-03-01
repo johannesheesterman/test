@@ -11,7 +11,9 @@
 
     <script>
          window.addEventListener('message', function(e) {
-            console.log('message', e);
+            if (e.data && e.data.name == 'elfsquad.configurationUpdated') {
+                console.log('message', e);
+            }
         });
     </script>
 </body>
