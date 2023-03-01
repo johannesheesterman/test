@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Test</h1>
+
+    <script>
+         window.parent.addEventListener('message', function(e) {
+            console.log('message', e);
+        });
+    </script>
 </body>
 </html>
